@@ -207,6 +207,24 @@ form {
   text-align: center;
 }
 
+input {
+  border: 1px solid rgb(220, 219, 235);
+  font-size: 3rem;
+  border-radius: 4px;
+  font-size: 13px;
+  padding: 10px;
+  color: #000;
+  transition: all 0.15s ease-in;
+}
+
+#email {
+  font-size: 1.5rem;
+}
+/* input[type="email"] {
+    width: 70%;
+    height: 63%;
+    font-size: 1.5rem;
+  } */
 /* table points styling */
 
 #tpoints {
@@ -229,12 +247,6 @@ th {
   border-collapse: collapse;
 }
 
-tr,
-td,
-th {
-  /* width: 60%; */
-}
-
 td {
   padding-left: 6px;
 }
@@ -251,15 +263,8 @@ table tr:nth-child(even) {
 table tr:nth-child(odd) {
   background-color: #d9f4f2;
 }
+/* Input type email styling */
 
-input {
-  border: 1px solid rgb(220, 219, 235);
-  border-radius: 4px;
-  font-size: 13px;
-  padding: 10px;
-  color: #000;
-  transition: all 0.15s ease-in;
-}
 .box {
   box-shadow: 0px 0px 10px #afc0d9;
   background-color: #fff;
@@ -273,8 +278,8 @@ input {
   background: #e02c6d;
   border: 0;
   color: #ffffff;
-  padding: 8px 15px;
-  font-size: 15px;
+  padding: 11px 26px;
+  font-size: 24px;
   margin-left: 0.8rem;
   cursor: pointer;
 }
@@ -290,7 +295,7 @@ input {
   }
 
   header .heading {
-    font-size: 33px;
+    font-size: 31px;
   }
   .watch-live button {
     padding: 15px 30px;
@@ -339,10 +344,23 @@ input {
   }
   .match-info {
     width: 91.5%;
+    margin-bottom: 40px;
+  }
+  input[type="email"] {
+    width: 50%;
+    height: 43%;
+    font-size: 1.1rem;
+  }
+  #email{
+    font-size: 0.75rem;
+  }
+  .box button {
+    padding: 5px 10px;
+    font-size: 15px;
   }
   .football-icon {
     width: 100%;
-    margin-bottom: -52px;
+    /* margin-bottom: -52px; */
     margin: 0 auto;
   }
   .football-icon img {
@@ -350,5 +368,87 @@ input {
     margin-left: auto;
     margin-right: auto;
     display: block;
+  }
+  .social-links {
+    margin-top: 45px;
+    margin-top: -12px;
+  }
+}
+
+/* Media queries for tablet devices */
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+  header {
+    width: 100vw;
+    height: 820px;
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+
+  header .heading {
+    font-size: 43px;
+  }
+  .watch-live button {
+    padding: 20px 35px;
+  }
+  .players-section {
+    width: 85%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 14px;
+  }
+
+  .copa-highlights {
+    flex-direction: column;
+    width: 100%;
+  }
+  .left-part {
+    width: 90%;
+    padding: 0 12%;
+    margin-bottom: 30px;
+  }
+  .left-part h1 {
+    font-size: 40px;
+  }
+
+  .right-part {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .right-part img {
+    width: 628px;
+    height: 548px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #tpoints {
+    width: 90%;
+  }
+  .match-info {
+    width: 91.5%;
+    margin-bottom: 40px;
+  }
+  input[type="email"] {
+    width: 70%;
+    height: 63%;
+    font-size: 1.5rem;
+  }
+  .box button {
+    padding: 12px 22px;
+    font-size: 25px;
+  }
+
+  .football-icon {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .football-icon img {
+    height: 93px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .social-links {
+    margin-top: 45px;
+    margin-top: 28px;
   }
 }
