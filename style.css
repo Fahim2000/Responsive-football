@@ -153,13 +153,15 @@ footer h2 {
 
 .copa-highlights {
   display: flex;
-  width: 100vw;
+  width: 37vw;
   justify-content: space-around;
   margin-bottom: 180px;
+  margin: 0 auto;
 }
 
 .left-part {
   width: 51vw;
+  margin-right: 60px;
 }
 .left-part h1 {
   font-size: 48px;
@@ -232,6 +234,7 @@ input {
   height: auto;
   margin: 0 auto;
   margin-bottom: 150px;
+  margin-top: 80px;
 }
 table caption {
   text-align: center;
@@ -351,7 +354,7 @@ table tr:nth-child(odd) {
     height: 43%;
     font-size: 1.1rem;
   }
-  #email{
+  #email {
     font-size: 0.75rem;
   }
   .box button {
